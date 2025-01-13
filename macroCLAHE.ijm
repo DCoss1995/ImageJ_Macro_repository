@@ -1,5 +1,5 @@
-for (i = 1; i <= nSlices; i++) {
+for (i = 1; i <= nSlices; i++) { // change the i= and i<= values as needed.
     setSlice(i);
-    run("Enhance Local Contrast (CLAHE)","blocksize=10 histogram=256 maximum=3 mask=*None* fast_(less_accurate)");
+    run("Enhance Local Contrast (CLAHE)","blocksize=10 histogram=256 maximum=3 mask=*None* fast_(less_accurate)"); // parameters of CLAHE can be changed as needed.
 }
 
